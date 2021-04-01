@@ -63,6 +63,9 @@ export class AppComponent {
     if(this.itemArray[2] === this.itemArray[4] && this.itemArray[2] === this.itemArray[6] && this.itemArray[2] != 'empty'){
       this.winMessage = `${this.itemArray[2]} Won`;
     }
+    else if(!this.itemArray.includes('empty')){
+      this.winMessage = ` Match draw`
+    }
   }
 
 }
